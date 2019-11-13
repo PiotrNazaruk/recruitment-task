@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>YSLAB Task</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./assets/logo.png" alt="" />
+      </div>
+    </header>
+    <section class="search">
+      <label class="search__label" for="search">News search</label>
+      <input
+        class="search__input"
+        type="text"
+        id="search"
+        placeholder="try football..."
+      />
+    </section>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>YSLAB Task</title>
-</head>
+    <section class="articles">
+      <div class="articles__headline">
+        <h3>News List</h3>
+      </div>
+      <div class="news"></div>
+    </section>
+    <section class="select-input">
+      <label class="select__label" for="page-number">Page</label>
+      <select class="select__option" id="page-number"></select>
+    </section>
 
-<body>
-
-  <script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
