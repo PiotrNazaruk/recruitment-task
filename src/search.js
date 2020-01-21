@@ -13,8 +13,9 @@ export class Search {
   }
 
   handleChange(ev) {
+    console.log(ev.target.value)
     this.cb(ev.target.value)
-  }
+  } 
 }
 
 function debounce(func, wait) {
